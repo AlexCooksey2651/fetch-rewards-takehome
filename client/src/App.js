@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import SearchUserForm from "./components/SearchUserForm";
 import NewTransactionForm from "./components/NewTransactionForm";
 import SpendPointsForm from "./components/SpendPointsForm";
+import PayerPointBalances from "./components/PayerPointBalances";
 import Container from 'react-bootstrap/Container';
 
 const exampleUser = {
@@ -45,6 +46,7 @@ function App() {
       <NewTransactionForm />
       <hr />
       <SpendPointsForm />
+      <PayerPointBalances />
     </Container>
   );
 }
