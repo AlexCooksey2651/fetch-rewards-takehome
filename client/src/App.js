@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import AddUserForm from "./components/AddUserForm";
 import SearchUserForm from "./components/SearchUserForm";
 import NewTransactionForm from "./components/NewTransactionForm";
 import SpendPointsForm from "./components/SpendPointsForm";
@@ -47,6 +48,7 @@ function App() {
 
   return (
     <Container>
+      <AddUserForm />
       <SearchUserForm />
       <br />
       <Container>

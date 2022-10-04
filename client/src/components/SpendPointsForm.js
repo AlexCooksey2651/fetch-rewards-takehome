@@ -14,7 +14,7 @@ const SpendPointsForm = () => {
             <Form>
                 <Form.Group>
                     <Form.Label>Enter Points Spent</Form.Label>
-                    <Form.Control type="number" value={pointsSpent} onChange={e => setPointsSpent(e.target.value)} />
+                    <Form.Control type="number" min="0" step="1" value={pointsSpent} onChange={e => setPointsSpent(e.target.value)} />
                 </Form.Group>
                 <Button type="submit">Submit Points Spent</Button>
             </Form>
