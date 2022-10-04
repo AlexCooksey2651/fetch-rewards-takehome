@@ -3,8 +3,8 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container'
 
-const SearchUserForm = () => {
-    const [userText, setUserText] = useState("");
+const SpendPointsForm = () => {
+    const [pointsSpent, setPointsSpent] = useState(0);
     // when submit, does get request to find user and pass that info back up to app.js to set user
 
 
@@ -13,13 +13,13 @@ const SearchUserForm = () => {
         <Container>
             <Form>
                 <Form.Group>
-                    <Form.Label>Enter User Name</Form.Label>
-                    <Form.Control type="text" value={userText} onChange={e => setUserText(e.target.value)} />
+                    <Form.Label>Enter Points Spent</Form.Label>
+                    <Form.Control type="number" value={pointsSpent} onChange={e => setPointsSpent(e.target.value)} />
                 </Form.Group>
-                <Button type="submit">Search</Button>
+                <Button type="submit">Submit Points Spent</Button>
             </Form>
         </Container>
     )
 }
 
-export default SearchUserForm;
+export default SpendPointsForm;
