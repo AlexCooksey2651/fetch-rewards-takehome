@@ -5,6 +5,7 @@ class CreateTransactions < ActiveRecord::Migration[6.1]
       t.integer :payer_id
       t.string :date
       t.integer :points
+      t.integer :remaining
 
       t.timestamps
     end
