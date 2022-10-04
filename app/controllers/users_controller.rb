@@ -6,7 +6,7 @@ class UsersController < ApplicationController
     end
 
     def show
-        user = User.find_by(name: )
+        user = User.find_by(username: )
         if user
             render json: user, status: :ok
         else
@@ -17,6 +17,6 @@ class UsersController < ApplicationController
     private
 
     def user_params
-        params.permit(:name)
+        params.permit(:username)
     end
 end
